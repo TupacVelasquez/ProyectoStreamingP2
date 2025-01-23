@@ -3,7 +3,7 @@ import './Inicio.css'
 
 const Inicio: React.FC = () => {
     return (
-        <div>
+        <div className="container">
             <h1>
                 Bienvenido a Streamings
             </h1>

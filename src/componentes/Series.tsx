@@ -7,12 +7,20 @@ interface Serie {
     temporadas: number;
 }
 
+interface Streaming {
+    id: number;
+    opinion: string;
+    idSerie: number;
+    idGenero: number;
+}
+
 interface PropsSerie {
     series: Serie[];
     setSeries: React.Dispatch<React.SetStateAction<Serie[]>>;
+    streamings: Streaming[];
 }
 
-const Series: React.FC<PropsSerie> = ({ series, setSeries }) => {
+const Series: React.FC<PropsSerie> = ({ series, setSeries, streamings }) => {
     const [titulo, setTitulo] = useState<string>('');
     const [añoPublicacion, setAñoPublicacion] = useState<number | ''>('');
     const [temporadas, setTemporadas] = useState<number | ''>('');
@@ -47,6 +55,13 @@ const Series: React.FC<PropsSerie> = ({ series, setSeries }) => {
     };
 
     const eliminarSerie = (id: number) => {
+        // Verificar si la serie está relacionada con un streaming
+        const estaRelacionado = streamings.some((streaming) => streaming.idSerie === id);
+        if (estaRelacionado) {
+            alert('No se puede eliminar la serie porque está relacionada con un streaming.');
+            return;
+        }
+
         // Confirmar eliminación
         const confirmar = window.confirm('¿Estás seguro de que deseas eliminar esta serie?');
         if (confirmar) {

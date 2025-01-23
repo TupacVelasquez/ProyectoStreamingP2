@@ -13,6 +13,7 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 nav {
@@ -25,7 +26,7 @@ nav {
 }
 
 nav a {
-    color: #ADFF2F; /* Green color */
+    color: #9146FF; /* Twitch purple color */
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -34,13 +35,13 @@ nav a {
 
 nav a:hover {
     background-color: #2C2F33; /* Darker background on hover */
-    color: #ADFF2F; /* Green color on hover */
+    color: #9146FF; /* Twitch purple color on hover */
 }
 
 nav .logo {
     font-size: 25px;
     font-weight: bold;
-    color: #ADFF2F; /* Green color for logo */
+    color: #9146FF; /* Twitch purple color for logo */
 }
 
 nav .menu {
@@ -66,14 +67,14 @@ nav .menu a.active {
 
 .formulario input {
     padding: 10px;
-    border: 1px solid #ADFF2F; /* Green border */
+    border: 1px solid #9146FF; /* Twitch purple border */
     border-radius: 4px;
     font-size: 16px;
 }
 
 .formulario button {
     padding: 10px;
-    background-color: #32CD32; /* Green background */
+    background-color: #9146FF; /* Twitch purple background */
     color: white;
     border: none;
     border-radius: 4px;
@@ -82,7 +83,7 @@ nav .menu a.active {
 }
 
 .formulario button:hover {
-    background-color: #228B22; /* Darker green on hover */
+    background-color: #772CE8; /* Darker purple on hover */
 }
 
 table {
@@ -91,14 +92,14 @@ table {
 }
 
 table th, table td {
-    border: 1px solid #ADFF2F; /* Green border */
+    border: 1px solid #9146FF; /* Twitch purple border */
     padding: 10px;
     text-align: left;
 }
 
 table th {
     background-color: #18181B; /* Dark background */
-    color: #ADFF2F; /* Green color */
+    color: #9146FF; /* Twitch purple color */
 }
 
 table tr:nth-child(even) {
@@ -111,32 +112,32 @@ table tr:hover {
 
 table button {
     padding: 5px 10px;
-    background-color: #32CD32; /* Green background */
+    background-color: #9146FF; /* Twitch purple background */
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    
 }
 
 table button:hover {
-    background-color: #228B22; /* Darker green on hover */
+    background-color: #772CE8; /* Darker purple on hover */
 }
+
 select {
     padding: 10px;
-    border: 1px solid #ADFF2F; /* Green border */
+    border: 1px solid #9146FF; /* Twitch purple border */
     border-radius: 4px;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
 h1, h2, h3 {
-    color: #ADFF2F; /* Green color */
+    color: #9146FF; /* Twitch purple color */
 }
 
 label {
     margin-right: 10px;
-    color: #ADFF2F; /* Green color */
+    color: #9146FF; /* Twitch purple color */
 }
 
 input[type="radio"] {
@@ -145,7 +146,7 @@ input[type="radio"] {
 
 button {
     padding: 10px;
-    background-color: #32CD32; /* Green background */
+    background-color: #9146FF; /* Twitch purple background */
     color: white;
     border: none;
     border-radius: 4px;
@@ -155,5 +156,40 @@ button {
 }
 
 button:hover {
-    background-color: #228B22; /* Darker green on hover */
+    background-color: #772CE8; /* Darker purple on hover */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card {
+    background-color: #18181B; /* Dark background */
+    color: #9146FF; /* Twitch purple color */
+    border: 1px solid #9146FF; /* Twitch purple border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #9146FF; /* Twitch purple border */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    margin-bottom: 10px;
 }

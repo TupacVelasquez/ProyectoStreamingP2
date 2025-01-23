@@ -6,12 +6,20 @@ interface Genero {
     descripcion: string;
 }
 
+interface Streaming {
+    id: number;
+    opinion: string;
+    idSerie: number;
+    idGenero: number;
+}
+
 interface GenerosProps {
     generos: Genero[];
     setGeneros: React.Dispatch<React.SetStateAction<Genero[]>>;
+    streamings: Streaming[];
 }
 
-const Generos: React.FC<GenerosProps> = ({ generos, setGeneros }) => {
+const Generos: React.FC<GenerosProps> = ({ generos, setGeneros, streamings }) => {
     const [nombre, setNombre] = useState<string>('');
     const [descripcion, setDescripcion] = useState<string>('');
     const [generoId, setGeneroId] = useState<number | null>(null);
@@ -43,6 +51,13 @@ const Generos: React.FC<GenerosProps> = ({ generos, setGeneros }) => {
     };
 
     const eliminarGenero = (id: number) => {
+        // Verificar si el género está relacionado con algún streaming
+        const estaRelacionado = streamings.some((streaming) => streaming.idGenero === id);
+        if (estaRelacionado) {
+            alert('No se puede eliminar el género porque está relacionado con un streaming.');
+            return;
+        }
+
         // Confirmar eliminación
         const confirmar = window.confirm('¿Estás seguro de que deseas eliminar este género?');
         if (confirmar) {
