@@ -1,0 +1,23 @@
+/* /c:/Users/Asus/Desktop/U/TUPAC/6TO SEMESTRE/Integrativa/ProyectoStreaming/src/componentes/Inicio.css */
+
+h1 {
+    animation: wave 2s infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(4px) rotate(4deg);
+    }
+    50% {
+        transform: translateX(8px) rotate(-5deg);
+    }
+    75% {
+        transform: translateX(4px) rotate(4deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}

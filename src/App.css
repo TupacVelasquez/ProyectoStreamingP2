@@ -1,0 +1,159 @@
+/* ProyectoStreaming/src/App.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000; /* Fondo negro para resaltar el contenido */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #18181B; /* Dark background */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: #ADFF2F; /* Green color */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #2C2F33; /* Darker background on hover */
+    color: #ADFF2F; /* Green color on hover */
+}
+
+nav .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ADFF2F; /* Green color for logo */
+}
+
+nav .menu {
+    display: flex;
+    gap: 15px;
+}
+
+nav .menu a {
+    border-radius: 4px;
+}
+
+nav .menu a.active {
+    background-color: #1E90FF; /* Blue color for active link */
+    color: white;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.formulario input {
+    padding: 10px;
+    border: 1px solid #ADFF2F; /* Green border */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formulario button {
+    padding: 10px;
+    background-color: #32CD32; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario button:hover {
+    background-color: #228B22; /* Darker green on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ADFF2F; /* Green border */
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #18181B; /* Dark background */
+    color: #ADFF2F; /* Green color */
+}
+
+table tr:nth-child(even) {
+    background-color: #2C2F33; /* Darker background for even rows */
+}
+
+table tr:hover {
+    background-color: #18181B; /* Dark background on hover */
+}
+
+table button {
+    padding: 5px 10px;
+    background-color: #32CD32; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+table button:hover {
+    background-color: #228B22; /* Darker green on hover */
+}
+select {
+    padding: 10px;
+    border: 1px solid #ADFF2F; /* Green border */
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+h1, h2, h3 {
+    color: #ADFF2F; /* Green color */
+}
+
+label {
+    margin-right: 10px;
+    color: #ADFF2F; /* Green color */
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #32CD32; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #228B22; /* Darker green on hover */
+}
